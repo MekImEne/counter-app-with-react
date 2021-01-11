@@ -5,7 +5,7 @@ class Counters extends Component {
   
   render() {
     // Destructuring Arguments
-    const {onReset,counters,onDelete,onIncrement} = this.props;
+    const {onReset,counters,onDelete,onIncrement,onDecrement} = this.props;
     console.log("Counters - Rendred here");
 
     return (
@@ -20,6 +20,7 @@ class Counters extends Component {
             counter={counter}
             onDelete={onDelete}
             onIncrement = {onIncrement}
+            onDecrement = {onDecrement}
           >
             <h4>Counter #{counter.id} </h4>
           </Counter>
