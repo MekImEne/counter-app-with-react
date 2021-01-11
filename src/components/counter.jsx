@@ -10,6 +10,11 @@ class Counter extends Component {
     }
   };
 
+  componentWillUnmount(){
+    // after deleting a counter => here will clean all
+    console.log("Counter - Unmount");
+  }
+
   // state = {
   //   //value: this.props.counter.value,
   //   //imageUrl: 'https://picsum.photos/200',
