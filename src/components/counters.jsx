@@ -6,6 +6,8 @@ class Counters extends Component {
   render() {
     // Destructuring Arguments
     const {onReset,counters,onDelete,onIncrement} = this.props;
+    console.log("Counters - Rendred here");
+
     return (
       <div>
         <button

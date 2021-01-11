@@ -42,6 +42,8 @@ class Counter extends Component {
   // };
 
   render() {
+    console.log("Counter - Rendred here");
+
     // console.log("props", this.props);
     return (
       <React.Fragment>

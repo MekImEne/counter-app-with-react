@@ -4,6 +4,7 @@ import Counters from "./components/counters";
 import Navbar from "./components/navbar";
 
 class App extends Component {
+
   state = {
     counters: [
       { id: 1, value: 0 },
@@ -11,6 +12,15 @@ class App extends Component {
       { id: 3, value: 0 },
       { id: 4, value: 0 },
     ],
+  };
+
+  constructor() {
+    super();
+    console.log('App-Contsructor here');
+  };
+
+  componentDidMount(){
+    console.log('App-Mounted here');
   };
 
   handleDelete = (counterId) => {
@@ -37,6 +47,7 @@ class App extends Component {
   };
 
   render(){
+    console.log("App - Rendred here");
     return (
       <>
         <Navbar 
